@@ -1,4 +1,8 @@
-import { fetchImages, resetPage, getCurrentPage } from './js/pixabay-api.js';
+import {
+  fetchImages,
+  resetPage,
+  getCurrentPage,
+} from './src/main/webapp/js/pixabay-api.js';
 import {
   clearGallery,
   showImages,
@@ -7,10 +11,8 @@ import {
   hideLoadingIndicator,
   toggleLoadMoreButton,
   showEndOfResultsMessage,
-} from './js/render-functions.js';
+} from './src/main/webapp/js/render-functions.js';
 
-// SimpleLightbox вже підключений через CDN
-// Всі функції можна використовувати після підключення через CDN
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionPosition: 'bottom',
